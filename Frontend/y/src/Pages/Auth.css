@@ -1,80 +1,103 @@
-/* Shared Styles */
-.auth-box {
+/* Main container for flex layout */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+  }
+  
+  /* Styling for the data results container */
+  .all-data-container {
+    width: 45%; /* Adjust width as needed */
+    background-color: #f7f7f7;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
-    width: 100%;
-    max-width: 350px;
-    margin: 0 auto;
-    text-align: center;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-    background-color: #fff;
-}
-
-h2 {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Header styling for the results */
+  .all-data-container h2 {
     margin-bottom: 20px;
-    font-size: 24px;
-    color: #333;
-}
-
-.auth-form {
-    display: flex;
-    flex-direction: column;
-}
-
-.form-group {
+    font-size: 22px;
+    color: #2c3e50;
+  }
+  
+  /* List styling for results */
+  .all-data-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Individual result item styling */
+  .all-data-container li {
     margin-bottom: 15px;
-    text-align: left;
-}
-
-.form-group label {
-    display: block;
+    padding: 10px;
+    background-color: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Styling for the form container */
+  .form-container {
+    width: 45%; /* Adjust width as needed */
+    background-color: #fff;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Form field styling */
+  .form-container form div {
+    margin-bottom: 15px;
+  }
+  
+  /* Label styling */
+  .form-container label {
     font-weight: bold;
+    display: block;
     margin-bottom: 5px;
-    color: #555;
-}
-
-.form-control {
+    color: #2c3e50;
+  }
+  
+  /* Input field styling */
+  .form-container input {
     width: 100%;
     padding: 10px;
-    border: 1px solid #ccc;
     border-radius: 4px;
-    outline: none;
-    transition: border-color 0.3s ease;
-}
-
-.form-control:focus {
-    border-color: #007bff;
-}
-
-/* Primary Button Styles */
-.primary-btn {
+    border: 1px solid #ccc;
+  }
+  
+  /* Button styling */
+  button {
+    width: 100%;
+    padding: 12px;
     background-color: #007bff;
     color: white;
     border: none;
-    padding: 12px;
     border-radius: 5px;
-    cursor: pointer;
     font-size: 16px;
-    font-weight: bold;
-    transition: background-color 0.3s ease, transform 0.2s ease;
-}
-
-.primary-btn:hover {
-    background-color: #0056b3;
-    transform: translateY(-2px);
-}
-
-/* Toggle Link Styles */
-.toggle-link {
-    margin-top: 10px;
-    color: #007bff;
     cursor: pointer;
-    font-size: 14px;
-    transition: color 0.3s ease;
-}
-
-.toggle-link:hover {
-    color: #0056b3;
-    text-decoration: underline;
-}
+  }
+  
+  /* Button hover effect */
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Error message styling */
+  .error-message {
+    color: red;
+  }
+  
+  /* Results container for list items */
+  .results-container ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Individual result item styling */
+  .results-container li {
+    margin-bottom: 10px;
+  }
+  

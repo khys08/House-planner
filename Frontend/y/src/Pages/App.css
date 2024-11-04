@@ -1,0 +1,166 @@
+/* App Container */
+.app-container {
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Header */
+header {
+  background-color: #6200ea; /* Vibrant purple */
+  padding: 15px;
+  color: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Soft shadow for depth */
+}
+
+header h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+/* Navigation */
+nav ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline-block;
+  margin: 0 20px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1rem;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+  color: #bb86fc; /* Lighter purple on hover */
+}
+
+/* Main Content */
+main {
+  margin: 30px;
+}
+
+main h2 {
+  font-size: 1.8rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Flex Container */
+.container {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  background-color: #f4f4f9; /* Soft off-white background */
+  height: calc(100vh - 80px); 
+}
+
+.left-side {
+  flex: 1;
+  padding: 20px;
+  background-color: #fefefe;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  border-radius: 10px;
+}
+
+.right-side {
+  flex: 1;
+  padding: 20px;
+  background-color: #f9f9f9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+/* Canvas */
+canvas {
+  width: 100%;
+  height: 100%;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+/* Authentication Box */
+.auth-box {
+  width: 90%;
+  max-width: 450px;
+  padding: 25px;
+  background-color: white;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  border-radius: 12px;
+}
+
+.auth-box h2 {
+  margin-bottom: 25px;
+  font-size: 1.6rem;
+  color: #333;
+}
+
+/* Form Group */
+.form-group {
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #555;
+}
+
+.form-group input,
+.form-group select {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+  font-size: 1rem;
+}
+
+/* Primary Button */
+.primary-btn {
+  background-color: #6200ea; /* Vibrant purple */
+  color: white;
+  padding: 12px 18px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bold;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.primary-btn:hover {
+  background-color: #3700b3; /* Darker purple on hover */
+  transform: translateY(-2px); /* Slight lift effect */
+}
+
+/* Error Message */
+.error-message {
+  color: #d32f2f; /* Deep red */
+  margin-bottom: 15px;
+  font-weight: bold;
+}
+
+/* Toggle Link */
+.toggle-link {
+  margin-top: 15px;
+  color: #6200ea; /* Matching link color */
+  cursor: pointer;
+  font-size: 0.9rem;
+  transition: color 0.3s ease;
+}
+
+.toggle-link:hover {
+  text-decoration: underline;
+  color: #3700b3; /* Darker on hover */
+}

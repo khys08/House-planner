@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../Pages/Auth.css'; 
 
 const HomeDataForm = () => {
   const [formData, setFormData] = useState({
@@ -55,8 +56,9 @@ const HomeDataForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit} encType="multipart/form-data">
-      <div>
+    <form onSubmit={handleSubmit} encType="multipart/form-data" className="home-data-form">
+      <h2>Submit Your House Data</h2>
+      <div className="form-group">
         <label>Building Name:</label>
         <input
           type="text"
@@ -64,9 +66,10 @@ const HomeDataForm = () => {
           value={formData.Building}
           onChange={handleChange}
           required
+          placeholder="Enter building name"
         />
       </div>
-      <div>
+      <div className="form-group">
         <label>Area (sq ft):</label>
         <input
           type="number"
@@ -74,9 +77,10 @@ const HomeDataForm = () => {
           value={formData.Area}
           onChange={handleChange}
           required
+          placeholder="Enter area in sq ft"
         />
       </div>
-      <div>
+      <div className="form-group">
         <label>Number of Bedrooms:</label>
         <input
           type="number"
@@ -84,9 +88,10 @@ const HomeDataForm = () => {
           value={formData.BedRoom}
           onChange={handleChange}
           required
+          placeholder="Enter number of bedrooms"
         />
       </div>
-      <div>
+      <div className="form-group">
         <label>Number of Dining Rooms:</label>
         <input
           type="number"
@@ -94,9 +99,10 @@ const HomeDataForm = () => {
           value={formData.DiningRoom}
           onChange={handleChange}
           required
+          placeholder="Enter number of dining rooms"
         />
       </div>
-      <div>
+      <div className="form-group">
         <label>Number of Kitchens:</label>
         <input
           type="number"
@@ -104,13 +110,14 @@ const HomeDataForm = () => {
           value={formData.Kitchen}
           onChange={handleChange}
           required
+          placeholder="Enter number of kitchens"
         />
       </div>
-      <div>
+      <div className="form-group">
         <label>House Image:</label>
         <input type="file" name="HouseImage" onChange={handleFileChange} />
       </div>
-      <button type="submit">Submit</button>
+      <button type="submit" className="submit-button">Submit</button>
     </form>
   );
 };

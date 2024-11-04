@@ -1,23 +1,23 @@
 
 import React from 'react';
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
-import Login from '../src/Pages/Login';
+import Home from '../src/Pages/Home';
 import HomeDataForm from '../src/components/BuildModel';
 import SearchHouseForm from './components/SearchData';
-import './App.css'; 
+import '../src/Pages/App.css'; 
 
 const App = () => {
   return (
     <Router>
       <div className="app-container">
         <header>
-          <h1>House Management System</h1>
+          <h1>ARCH HUB</h1>
           
         </header>
         
         <main>
           <Routes>
-            <Route path="/" element={<Login />} />
+            <Route path="/" element={<Home />} />
             <Route path="/Build-house" element={<HomeDataForm />} />
             <Route path="/search-house" element={<SearchHouseForm />} />
             <Route
