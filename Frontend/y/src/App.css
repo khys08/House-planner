@@ -1,0 +1,36 @@
+.App {
+  font-family: Arial, sans-serif; /* Set a font family */
+  height: 100vh; /* Full viewport height */
+  display: flex; /* Use flexbox layout */
+}
+
+.container {
+  display: flex; /* Use flexbox to align children */
+  width: 100%; /* Full width */
+}
+
+.left-side {
+  flex: 1; /* Take up available space */
+  display: flex; /* Center the content */
+  align-items: center; /* Center vertically */
+  justify-content: flex-start; /* Align content to the left */
+  background-color: #f0f0f0; /* Light background for contrast */
+  position: relative; /* Allow absolute positioning for lights */
+  padding-left: 20px; /* Add padding to move house slightly left */
+}
+
+.right-side {
+  width: 400px; /* Increase width for the auth component */
+  padding: 20px; /* Add some padding */
+  background-color: #ffffff; /* White background for the auth section */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  display: flex; /* Use flexbox layout */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items */
+  justify-content: center; /* Center items */
+}
+
+canvas {
+  width: 100%; /* Full width for the canvas */
+  height: 100%; /* Full height for the canvas */
+}
